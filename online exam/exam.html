@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Examination</title>
+<style>
+body {
+font-family: Arial;
+background: lightblue;
+}
+.exam {
+width: 600px;
+margin: auto;
+background: white;
+padding: 20px;
+}
+h1 {
+text-align: center;
+color: navy;
+}
+.back {
+display: inline-block;
+padding: 8px 15px;
+background: gray;
+color: white;
+text-decoration: none;
+}
+input[type="submit"] {
+padding: 10px 20px;
+background: navy;
+color: white;
+border: none;
+}
+</style>
+</head>
+<body>
+<div class="exam">
+<a href="index.html" class="back">Back to Home</a>
+<h1>Online Examination System</h1>
+<form action="ExamServlet" method="post">
+<p>1. What does HTML stand for?</p>
+<input type="radio" name="q1" value="HTML"> Hyper Text Markup Language<br>
+<input type="radio" name="q1" value="CSS"> Cascading Style Sheets<br>
+<input type="radio" name="q1" value="Java"> Java Application Language<br>
+<input type="radio" name="q1" value="PHP"> Hypertext Programming Language<br>
+<p>2. Which language is used for styling web pages?</p>
+<input type="radio" name="q2" value="HTML"> HTML<br>
+<input type="radio" name="q2" value="CSS"> CSS<br>
+<input type="radio" name="q2" value="Java"> Java<br>
+<input type="radio" name="q2" value="PHP"> PHP<br>
+<p>3. Which tag creates a hyperlink?</p>
+<input type="radio" name="q3" value="p"> &lt;p&gt;<br>
+<input type="radio" name="q3" value="a"> &lt;a&gt;<br>
+<input type="radio" name="q3" value="img"> &lt;img&gt;<br>
+<input type="radio" name="q3" value="div"> &lt;div&gt;<br>
+<p>4. Which tag is used to insert an image?</p>
+<input type="radio" name="q4" value="image"> &lt;image&gt;<br>
+<input type="radio" name="q4" value="img"> &lt;img&gt;<br>
+<input type="radio" name="q4" value="pic"> &lt;pic&gt;<br>
+<input type="radio" name="q4" value="src"> &lt;src&gt;<br>
+<p>5. Which CSS property changes text color?</p>
+<input type="radio" name="q5" value="font"> font<br>
+<input type="radio" name="q5" value="color"> color<br>
+<input type="radio" name="q5" value="text"> text<br>
+<input type="radio" name="q5" value="background"> background<br>
+<p>6. Which tag creates a table row?</p>
+<input type="radio" name="q6" value="td"> &lt;td&gt;<br>
+<input type="radio" name="q6" value="tr"> &lt;tr&gt;<br>
+<input type="radio" name="q6" value="th"> &lt;th&gt;<br>
+<input type="radio" name="q6" value="table"> &lt;table&gt;<br>
+<p>7. Which attribute specifies a hyperlink destination?</p>
+<input type="radio" name="q7" value="link"> link<br>
+<input type="radio" name="q7" value="src"> src<br>
+<input type="radio" name="q7" value="href"> href<br>
+<input type="radio" name="q7" value="url"> url<br>
+<p>8. Which CSS property changes background color?</p>
+<input type="radio" name="q8" value="color"> color<br>
+<input type="radio" name="q8" value="background-color"> background-color<br>
+<input type="radio" name="q8" value="bg"> bg<br>
+<input type="radio" name="q8" value="background"> background<br>
+<p>9. Which input type allows one option to be selected?</p>
+<input type="radio" name="q9" value="checkbox"> checkbox<br>
+<input type="radio" name="q9" value="radio"> radio<br>
+<input type="radio" name="q9" value="text"> text<br>
+<input type="radio" name="q9" value="button"> button<br>
+<p>10. Which tag creates a paragraph?</p>
+<input type="radio" name="q10" value="th"> &lt;th&gt;<br>
+<input type="radio" name="q10" value="p"> &lt;p&gt;<br>
+<input type="radio" name="q10" value="h1"> &lt;h1&gt;<br>
+<input type="radio" name="q10" value="div"> &lt;div&gt;<br>
+<br>
+<input type="submit" value="Submit Exam">
+</form>
+</div>
+</body>
+</html>

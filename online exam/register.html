@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Online Examination Registration</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background: lightblue;
+}
+
+.header {
+    background: white;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 30px;
+    color: navy;
+    font-weight: bold;
+}
+
+.menu {
+    float: right;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.container {
+    width: 500px;
+    margin: 30px;
+    background: white;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: navy;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+.button {
+    background: navy;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    font-size: 16px;
+}
+
+</style>
+
+<script>
+
+function validateForm() {
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var cpassword = document.getElementById("cpassword").value;
+
+    var valid = true;
+
+    document.getElementById("nameError").innerHTML = "";
+    document.getElementById("emailError").innerHTML = "";
+    document.getElementById("passwordError").innerHTML = "";
+    document.getElementById("cpasswordError").innerHTML = "";
+
+    if (name == "") {
+        document.getElementById("nameError").innerHTML =
+        "* Full Name is required";
+        valid = false;
+    }
+
+    if (email == "") {
+        document.getElementById("emailError").innerHTML =
+        "* Email is required";
+        valid = false;
+    }
+
+    if (password == "") {
+        document.getElementById("passwordError").innerHTML =
+        "* Password is required";
+        valid = false;
+    }
+
+    if (cpassword == "") {
+        document.getElementById("cpasswordError").innerHTML =
+        "* Confirm Password is required";
+        valid = false;
+    }
+    else if (password != cpassword) {
+        document.getElementById("cpasswordError").innerHTML =
+        "* Passwords do not match";
+        valid = false;
+    }
+
+    if (valid) {
+        alert("Registration Successful");
+        window.location = "exam.html";
+    }
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<span class="logo">ONLINE EXAM</span>
+
+<div class="menu">
+
+<a href="index.html">Home</a>
+
+<a href="register.html">Register</a>
+
+</div>
+
+</div>
+
+
+<div class="container">
+
+<h2>Student Registration</h2>
+
+<form>
+
+<table border="1" cellpadding="10" cellspacing="0">
+
+<tr>
+
+<td><b>Full Name</b></td>
+
+<td>
+
+<input type="text" id="name">
+
+<br>
+
+<span id="nameError" class="error"></span>
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td><b>Email</b></td>
+
+<td>
+
+<input type="email" id="email">
+
+<br>
+
+<span id="emailError" class="error"></span>
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td><b>Password</b></td>
+
+<td>
+
+<input type="password" id="password">
+
+<br>
+
+<span id="passwordError" class="error"></span>
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td><b>Confirm Password</b></td>
+
+<td>
+
+<input type="password" id="cpassword">
+
+<br>
+
+<span id="cpasswordError" class="error"></span>
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td colspan="2" align="center">
+
+<input type="button"
+value="Register"
+class="button"
+onclick="validateForm()">
+
+<input type="reset"
+value="Clear"
+class="button">
+
+</td>
+
+</tr>
+
+</table>
+
+</form>
+
+</div>
+
+</body>
+</html>
