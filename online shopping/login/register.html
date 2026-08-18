@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Page</title>
+
+    <script>
+    function msg()
+    {
+        alert("Registration Successful");
+        window.location="product.html";
+    }
+    </script>
+
+</head>
+
+<body style="background-image:url('flower.jpg');
+             background-size:cover;
+             background-repeat:no-repeat;
+             background-position:center;
+             margin:0;">
+
+<table width="100%" height="100%">
+<tr>
+
+<td align="center" valign="middle">
+
+<h1 style="color:white;
+           background-color:rgba(0,0,0,0.6);
+           padding:10px;
+           display:inline-block;
+           border-radius:10px;">
+
+REGISTRATION PAGE
+
+</h1>
+
+<form>
+
+<table border="1"
+       cellpadding="10"
+       cellspacing="0"
+       width="60%"
+       style="background-color:white;
+              border-collapse:collapse;
+              border:2px solid black;">
+
+<tr>
+<td><b>First Name</b></td>
+<td><input type="text" size="40" required></td>
+</tr>
+
+<tr>
+<td><b>Last Name</b></td>
+<td><input type="text" size="40" required></td>
+</tr>
+
+<tr>
+<td><b>Email</b></td>
+<td><input type="email" size="40" required></td>
+</tr>
+
+<tr>
+<td><b>Phone Number</b></td>
+<td><input type="tel" size="40" required></td>
+</tr>
+
+<tr>
+<td><b>Username</b></td>
+<td><input type="text" size="40" required></td>
+</tr>
+
+<tr>
+<td><b>Password</b></td>
+<td><input type="password" size="40" required></td>
+</tr>
+
+<tr>
+<td><b>Confirm Password</b></td>
+<td><input type="password" size="40" required></td>
+</tr>
+
+<tr>
+
+<td colspan="2" align="center">
+
+<input type="button"
+       value="Register"
+       onclick="msg()"
+       style="background-color:green;
+              color:white;
+              padding:8px 20px;
+              border:none;">
+
+<input type="reset"
+       value="Clear"
+       style="background-color:red;
+              color:white;
+              padding:8px 20px;
+              border:none;">
+
+</td>
+
+</tr>
+
+</table>
+
+</form>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>
